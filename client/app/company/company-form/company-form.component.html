@@ -1,0 +1,15 @@
+<form novalidate [formGroup]="form" (ngSubmit)="submit()">
+
+  <label for="name">Name:</label>
+  <input formControlName="name" type="text" required>
+  <p *ngIf="!form.controls['name'].valid && formSubmitted">Required</p>
+
+  <label for="info">Info:</label>
+  <input formControlName="info" type="text" required>
+  <p *ngIf="!form.controls['info'].valid && formSubmitted">Required</p>
+
+  <input formControlName="_id" type="hidden">
+
+  <button type="submit">Save</button>
+
+</form>

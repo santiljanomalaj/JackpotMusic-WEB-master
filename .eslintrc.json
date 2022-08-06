@@ -1,0 +1,41 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "class-methods-use-this": [
+            "off"
+        ],
+        "no-underscore-dangle": [
+            "off"
+        ],
+        "no-bitwise": [
+            "error",
+            {
+                "allow": [
+                    "~"
+                ]
+            }
+        ],
+        "prefer-arrow-callback": "warn",
+        "no-param-reassign": "warn",
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "never",
+                "named": "never"
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 140,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreTemplateLiterals": true
+            }
+        ]
+    }
+}

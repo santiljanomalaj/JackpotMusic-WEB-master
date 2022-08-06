@@ -1,0 +1,4 @@
+<div *ngIf="company">
+  <p>Editing {{company.name}}</p>
+  <app-company-form [company]="company" [submitFunction]="submitFunction"></app-company-form>
+</div>

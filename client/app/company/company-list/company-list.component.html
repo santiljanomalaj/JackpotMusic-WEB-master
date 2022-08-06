@@ -1,0 +1,7 @@
+<p><a [routerLink]="['/companies/new']">Create Company</a></p>
+
+<ul>
+  <li *ngFor="let company of companies">
+    <a [routerLink]="['/companies', company._id]">{{company.name}}</a>
+  </li>
+</ul>

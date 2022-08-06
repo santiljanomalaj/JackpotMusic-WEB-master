@@ -1,0 +1,44 @@
+<div class="app-layout">
+
+  <nav class="navbar navbar-fixed-top">
+    <ul class="nav navbar-nav nav-links">
+      <li class="rules pull-left">
+        <a>Rules</a>
+      </li>
+      <li class="schedule-game">
+        <button class="btn btn-default btn-xs" [routerLink]="['/host/game/new']">Schedule Game</button>
+      </li>
+      <li class="account pull-right">
+        <a>Account</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="page-content-wrapper">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div class="container-fluid footer">
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-8 col-offset-2 tagline social-links padding-bottom padding-top">
+            <i class="fa fa-youtube margin-left margin-right"></i>
+            <i class="fa fa-twitter margin-left margin-right"></i>
+            <i class="fa fa-instagram margin-left margin-right"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="promo-link margin-bottom-no">
+            <a><i class="fa fa-video-camera"></i> Watch our promo video</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</div>
+

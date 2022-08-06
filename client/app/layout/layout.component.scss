@@ -1,0 +1,121 @@
+/deep/ .app-layout {
+  background: radial-gradient(circle at top, #707473 0%, #000 35%) !important;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: auto;
+
+  .page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-top: 15px;
+    margin-right: -220px;
+
+    .container {
+      padding-bottom: 180px;
+    }
+  }
+
+  .btn {
+    border-radius: 50px !important;
+    height: 50px;
+    color: white;
+  }
+
+  .sign-in {
+    background: linear-gradient(180deg, rgba(89, 66, 169, 0) 10%, rgba(65, 48, 123, 0.6) 50%) !important;
+  }
+
+  .create-acct {
+    background: linear-gradient(180deg, rgba(87, 184, 92, 0) 10%, rgba(57, 123, 59, 0.4) 50%) !important;
+  }
+
+  .navbar {
+    background-color: #242527;
+    height: 44px;
+
+    ul {
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      li {
+        float: none;
+        display: inline-block;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .rules {
+        text-transform: uppercase;
+      }
+
+      .schedule-game {
+        button {
+          height: 30px;
+          width: 100%;
+          padding: 7px 0;
+          background: none;
+          padding: 1px 5px;
+        }
+
+        button:focus {
+          outline: none;
+        }
+      }
+
+      .account {
+        //
+      }
+    }
+  }
+
+  .tagline {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .social-links {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 20px;
+    line-height: 23px;
+    height: 45px;
+  }
+
+  .promo-link {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    background-color: #41307B;
+    // width: 100%;
+    height: 45px;
+    padding: 11.85px 0 17.15px;
+    text-transform: uppercase;
+
+    a {
+      color: white;
+      text-decoration: none !important;
+    }
+  }
+
+  .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+// Media queries
+
+@media (min-width: 1200px) {
+  .container {
+      width: 100%;
+  }
+}

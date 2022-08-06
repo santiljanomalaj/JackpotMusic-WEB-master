@@ -1,0 +1,14 @@
+<div class='container'>
+  <div class='row'>
+    <div class="col-lg-8 col-lg-offset-2">
+      <h3 *ngIf="!isRequestCompleted">Confirming your email...</h3>
+      <h3 *ngIf="isRequestCompleted">Confirmation email</h3>
+      <div class="panel" *ngIf="isRequestCompleted">
+        <div class="panel-body">
+          <div class='alert alert-success' *ngIf="isConfirmed">Your email has been confirmed!</div>
+          <div class='alert alert-danger' *ngIf="!isConfirmed">{{ errorMessage }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

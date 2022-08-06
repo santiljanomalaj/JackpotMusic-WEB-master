@@ -1,0 +1,37 @@
+
+<div class="number-of-games">
+    <p>How many games?</p>
+    <span class="plus">+</span>
+    <input type="number">
+    <span class="minus">-</span>
+</div>
+
+<div class="game-explanation">
+    <p>Each game consists of 3 rounds and lasts about an hour. One game will cost $10 + $1 for every participant.</p>
+</div>
+
+<form [formGroup]="form" novalidate>
+
+    <div class="row">
+        <div class="col-lg-8 col">
+            <div class="form-group">
+                <label for="">Date</label>
+                <!-- <div class="input-group"> -->
+                    <span><i class="fa fa-calendar"></i></span>
+                    <input formControlName="date" type="date" class="form-control">
+                    <control-errors [control]="form.controls.date"></control-errors>
+                <!-- </div> -->
+            </div>
+
+            <div class="form-group">
+                <label for="">Time</label>
+                <!-- <div class="input-group"> -->
+                    <span><i class="far fa-clock"></i></span>
+                    <input formControlName="time" type="time" class="form-control">
+                    <control-errors [control]="form.controls.time"></control-errors>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+</form>

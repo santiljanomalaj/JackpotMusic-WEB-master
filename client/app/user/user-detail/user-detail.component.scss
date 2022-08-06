@@ -1,0 +1,91 @@
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  width: 225px;
+  height: 68px;
+}
+
+.jackpot-amount {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  float: none;
+  width: 100%;
+  color: white;
+  font-size: 80px;
+}
+
+.tagline {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.game-link-container {
+  height: 80px;
+  width: 256px;
+  border: 3px dotted #4AAB51;
+  border-radius: 8px;
+  background: linear-gradient(0deg, rgba(89, 66, 169, 0.17) 0%, #4AAB51 100%);
+  margin-right: auto;
+  margin-left: auto;
+
+  .game-link-text {
+    color: #70DA77;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+// Game schedule styles
+.schedule-container {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 343px;
+
+  .schedule-header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: white;
+    background: linear-gradient(180deg, #707473 0%, #242527 100%) !important;
+    border-radius: 12px 12px 0 0;
+    padding: 7px 0;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .schedule-item {
+    height: 90px;
+    color: white;
+    background-color: #242527;
+    padding: 19px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    .game-date {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 21px;
+      padding-bottom: 9px;
+      display: block !important;
+      float: left;
+      clear: both;
+    }
+
+    .game-times {
+      font-size: 15px;
+      line-height: 17px;
+      display: block !important;
+      float: left;
+      clear: both;
+    }
+  }
+
+  .schedule-item:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+}

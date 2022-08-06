@@ -1,0 +1,5 @@
+<div *ngIf="company">
+  <pre>{{company | json}}</pre>
+  <a [routerLink]="['/companies', company._id, 'edit']">Edit</a>
+  <button (click)="deleteItem(company)">Delete</button>
+</div>
